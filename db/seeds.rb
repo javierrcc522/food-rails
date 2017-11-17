@@ -9,9 +9,10 @@
 
 
 Product.destroy_all
+Review.destroy_all
 
 
-20.times do |index|
+10.times do |index|
   Product.create!(name: Faker::Food.ingredient,
                   cost: Faker::Number.number(2),
                   country_origin: Faker::Demographic.demonym)
@@ -19,3 +20,15 @@ Product.destroy_all
 end
 
 p "Created #{Product.count} product"
+
+30.times do |index|
+  Review.create!(author: Faker::Name.first_name,
+                  content_body: Faker::Lorem.sentence(5, true),
+                  rating: Faker::Number.number(1),
+                  product_id: Faker::Number.between(Product.first.id, Product.last.id))
+
+
+
+end
+
+p "Created #{Review.count} review"
