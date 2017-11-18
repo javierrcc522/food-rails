@@ -1,5 +1,7 @@
 <h1>Products</h1>
 
+<h3><%= link_to "Add a New Product", new_product_path %></h3>
+
 
 
 <ul>
@@ -7,5 +9,3 @@
     <li><%= link_to product.name, product_path(product) %> $<%= product.cost %></li><p>Origin: <%= product.country_origin %></p>
   <% end %>
 </ul>
-
-<h4><%= link_to "Add a New Product", new_product_path %></h4>
