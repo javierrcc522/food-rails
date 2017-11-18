@@ -1,24 +1,33 @@
-# README
+# _Rails food_
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### _Independent project implementing Ruby Rails 5 week 1_
 
-Things you may want to cover:
+#### By _**Javier Jimenez**_
 
-* Ruby version
+## Description
 
-* System dependencies
+_A webpage where a user can add a product and reviews_
 
-* Configuration
 
-* Database creation
+## Setup/Installation Requirements
 
-* Database initialization
+* _Clone the repository [here](https://github.com/javierrcc522/food-rails)_
+* _Open file in atom editor_
+* _In terminal run 'bundle install'_
+* _In terminal run 'rake db:migrate'_
+* _In terminal run 'rake db:seed'_
+* _In terminal run 'rails s'_
+* _go to page https:localhost3000/products_
+* _enjoy_
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+## Support and contact details
 
-* ...
+_If you have any comments or suggestions please make a contribution to my repository_
+
+### License
+
+*This project is licensed under the MIT license*
+
+Copyright (c) 2017 **_Javier Jimenez_**
