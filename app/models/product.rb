@@ -5,5 +5,7 @@ class Product < ActiveRecord::Base
 
   has_many :reviews
 
-   scope :ordered_by_name, -> { order(name: :asc) }
+  scope :ordered_by_name, -> { order(name: :asc) }
+
+  scope :three_most_recent, -> { order(created_at: :desc).limit(3)}
 end
