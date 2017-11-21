@@ -7,5 +7,5 @@ class Product < ActiveRecord::Base
 
   scope :ordered_by_name, -> { order(name: :asc) }
 
-  scope :three_most_recent, -> { order(created_at: :desc).limit(3)}
+  scope :three_most_recent, -> { order(created_at: :desc).limit(3)  }
 end

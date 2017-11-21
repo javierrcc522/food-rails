@@ -1,6 +1,7 @@
 class ProductsController < ApplicationController
   def index
     @products = Product.ordered_by_name
+    @three_most = Product.three_most_recent
   end
 
   def show
@@ -42,5 +43,5 @@ class ProductsController < ApplicationController
   private
   def product_params
      params.require(:product).permit(:name, :cost, :country_origin)
- end
+  end
 end
