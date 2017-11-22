@@ -16,4 +16,7 @@ class Product < ActiveRecord::Base
     .order("reviews_count DESC")
     .limit(1)
     )}
+
+    scope :search_country, -> (search_country) { where("lower(country_origin) like lower(?)", "%#{search_country}%")}
+
 end

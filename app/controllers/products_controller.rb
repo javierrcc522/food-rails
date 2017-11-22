@@ -3,6 +3,9 @@ class ProductsController < ApplicationController
     @products = Product.ordered_by_name
     @three_most = Product.three_most_recent
     @one_most = Product.most_reviews
+    if params[:search_country] != nil
+      @products = Product.search_country(params[:search_country])
+    end
   end
 
   def show

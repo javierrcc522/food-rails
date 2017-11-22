@@ -7,7 +7,15 @@
 
       <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
       <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    </head>
+    </head><br><br>
+    <header>
+      <%= form_tag(products_path, :method => "get") do %>
+        <%= text_field_tag :search_country, params[:search_country] %>
+
+        <%= submit_tag "Search Country" %>
+      <% end %>
+    </header>
+    <hr>
 
     <body>
       <%= yield %>

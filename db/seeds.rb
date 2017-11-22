@@ -12,6 +12,15 @@ Product.destroy_all
 Review.destroy_all
 
 
+
+
+5.times do |index|
+  Product.create!(name: Faker::Food.ingredient,
+                  cost: Faker::Number.number(2),
+                  country_origin: 'usa')
+
+end
+
 50.times do |index|
   Product.create!(name: Faker::Food.ingredient,
                   cost: Faker::Number.number(2),
