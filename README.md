@@ -13,9 +13,9 @@ _A webpage where a user can add a product and reviews_
 
 * _Clone the repository [here](https://github.com/javierrcc522/food-rails)_
 * _Open file in atom editor_
+* _In terminal cd into the file_
 * _In terminal run 'bundle install'_
-* _In terminal run 'rake db:migrate'_
-* _In terminal run 'rake db:seed'_
+* _In terminal run 'rake db:setup'_
 * _In terminal run 'rails s'_
 * _go to page https:localhost3000/products_
 * _enjoy_
