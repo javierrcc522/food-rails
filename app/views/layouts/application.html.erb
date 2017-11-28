@@ -18,6 +18,12 @@
     <hr>
 
     <body>
+      <div id="alert">
+        <%= flash[:alert]  %>
+        <%= flash[:notice] %> 
+      </div>
+
+
       <%= yield %>
     </body>
 
